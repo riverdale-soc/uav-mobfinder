@@ -3,7 +3,7 @@ Description=MOBFinder service
 
 [Service]
 User=root
-ExecStart=/home/Dmitri/Documents/jetson-uav/process.sh
+ExecStart=/home/Dmitri/Documents/uav-mobfinder/process.sh
 
 [Install]
 WantedBy=multi-user.target
