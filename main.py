@@ -1,3 +1,16 @@
+"""
+main.py
+Summary: Main script for UAV MobFinder. Handles video capture, object detection, and telemetry data recording.
+TODO:
+- Add support for multiple cameras
+- Add support for multiple object detection models
+- Add support for multiple object classification models
+- Add support for multiple object tracking models
+
+Author: Dmitri Lyalikov
+"""
+
+
 import cv2
 import numpy as np
 from dronekit import connect
