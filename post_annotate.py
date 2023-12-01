@@ -1,3 +1,17 @@
+"""
+post_annotate.py
+This script takes a recorded video and telemetry data and annotates the video with the detected objects and their locations.
+TODO:
+- Implement YOLOV7 inference
+- Implement Pytorch load weights and model
+- Implement Inference, remove pass
+
+After this:
+- Implement YOLOV7 inference for thermal model
+- Implement Pytorch load weights and model for thermal model
+- Implement Inference for thermal model, remove pass
+"""
+
 import cv2
 ### Replace with our YoloV7 implementation
 # from darknet import * 
@@ -203,5 +217,5 @@ def main():
 
 if __name__ == '__main__':
     main()
-    
+
 
