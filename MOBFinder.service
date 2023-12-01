@@ -1,0 +1,9 @@
+[Unit]
+Description=MOBFinder service
+
+[Service]
+User=root
+ExecStart=/home/Dmitri/Documents/jetson-uav/process.sh
+
+[Install]
+WantedBy=multi-user.target
