@@ -291,8 +291,7 @@ class App:
                     # to speed up the detection loop
                     if len(pts) > 0:
 
-                        # remove camera distortion from the locations of each object detected
-                        pts_undist = cv2.undistortPoints(np.array(pts).reshape(1,-1,2), cal_data['matrix'], cal_data['dist']).reshape(-1, 2)
+                       
                         
                         # generate a vector from the focal point to the camera plane for each detected object (x,y,z = right,back,down) relative to the UAV
                         obj_vectors = np.hstack((pts_undist, np.ones((pts_undist.shape[0], 1))))
