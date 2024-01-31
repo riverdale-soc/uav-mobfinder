@@ -8,6 +8,8 @@ When landed, the device is placed on deck, listening for asychronous MOB (Man-Ov
 The companion computer will connect to the flight controller over physical serial link. Once ready to be armed, Operating in a guided mode, the UAV will be launched to a given altitude. An optimal altitude is between 20 and 50 meters above sea level, because this is the best altitude our YOLO models are trained on. While waiting for the approach to this altitude, the RGB YOLO model will be loaded. We can now either approach (simple_goto) a relative GPS location or begin a preloaded mission.
 
 ## Mission
+Begin inference on visual stream over CSI cameras mounted facing perpindicular to the water surface. Continue such a process throughout mission. If person is detected, approximate coordinates, and approach this location at a given altitude. Issue ESP-NOW MOB_Reset request from handler to submersion module, and relay GPS location at approach to GCS.
+
 
 
 
